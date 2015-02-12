@@ -6,7 +6,7 @@ public class Veiculo {
 	private String chassi;
 	private String montadora;
 	private String modelo;
-	private int tipo;
+	private String tipo;
 	private String cor;
 	private float preco;
 	
@@ -35,10 +35,10 @@ public class Veiculo {
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
-	public int getTipo() {
+	public String getTipo() {
 		return tipo;
 	}
-	public void setTipo(int tipo) {
+	public void setTipo(String tipo) {
 		this.tipo = tipo;
 	}
 	public String getCor() {
