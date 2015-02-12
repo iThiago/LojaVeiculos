@@ -13,6 +13,8 @@ public class Main {
 			carro.setId(-1);
 			if(carro.getId() < 1){
 				throw new NullPointerException("sa");
+			}else{
+				
 			}
 			carro.setCambio("Cambio teste");
 			carro.setChassi("12321");
