@@ -14,7 +14,7 @@ public class Main {
 			if(carro.getId() < 1){
 				throw new NullPointerException("sa");
 			}else{
-				
+				int x = 0;
 			}
 			carro.setCambio("Cambio teste");
 			carro.setChassi("12321");
