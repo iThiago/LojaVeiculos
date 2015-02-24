@@ -1,5 +1,6 @@
 package br.com.infnet.loja.main;
 
+import br.com.infnet.loja.exception.MenorQueUmException;
 import br.com.infnet.loja.model.Carro;
 
 public class Main {
@@ -9,13 +10,7 @@ public class Main {
 		Carro carro = new Carro();
 		
 		try{
-			
 			carro.setId(-1);
-			if(carro.getId() < 1){
-				throw new NullPointerException("sa");
-			}else{
-				int x = 32;
-			}
 			carro.setCambio("Cambio teste");
 			carro.setChassi("12321");
 			carro.setCor("Azul");
@@ -25,12 +20,11 @@ public class Main {
 			carro.setPreco(20.300f);
 			carro.setTipo("Sedan");
 			
-			System.out.println(carro.getId());
+			//System.out.println(carro.getId());
 			
-		}catch(Exception e){
+		}catch(IllegalArgumentException e){
 			System.out.println(e.getMessage());
 		}
-		
 	}
 
 }

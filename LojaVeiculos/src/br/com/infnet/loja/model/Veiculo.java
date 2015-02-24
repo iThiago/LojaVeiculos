@@ -1,5 +1,7 @@
 package br.com.infnet.loja.model;
 
+import br.com.infnet.loja.exception.MenorQueUmException;
+
 public class Veiculo {
 	
 	private int id;
@@ -14,7 +16,12 @@ public class Veiculo {
 	public int getId() {
 		return id;
 	}
+	
 	public void setId(int id) {
+		
+		if(id < 1)
+			throw new MenorQueUmException("porra ");
+		
 		this.id = id;
 	}
 	public String getChassi() {
