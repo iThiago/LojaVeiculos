@@ -21,24 +21,13 @@
   </servlet-mapping>
   <servlet>
     <description></description>
-    <display-name>CarregaDropsServlet</display-name>
-    <servlet-name>CarregaDropsServlet</servlet-name>
-    <servlet-class>br.com.infnet.CarregaDropsServlet</servlet-class>
+    <display-name>CarregaDrops</display-name>
+    <servlet-name>CarregaDrops</servlet-name>
+    <servlet-class>br.com.infnet.CarregaDrops</servlet-class>
+<!--     <load-on-startup>1</load-on-startup> -->
   </servlet>
   <servlet-mapping>
-    <servlet-name>CarregaDropsServlet</servlet-name>
-    <url-pattern>/CarregaDropsServlet</url-pattern>
+    <servlet-name>CarregaDrops</servlet-name>
+    <url-pattern>/CarregaDrops</url-pattern>
   </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>DropdownsServlet</display-name>
-    <servlet-name>DropdownsServlet</servlet-name>
-    <servlet-class>br.com.infnet.DropdownsServlet</servlet-class>
-    <load-on-startup>1</load-on-startup>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>DropdownsServlet</servlet-name>
-    <url-pattern>/DropdownsServlet</url-pattern>
-  </servlet-mapping>
-  
 </web-app>
