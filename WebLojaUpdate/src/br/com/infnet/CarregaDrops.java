@@ -39,8 +39,7 @@ public class CarregaDrops extends HttpServlet {
 			AtributoDAO atributoDAO = new AtributoDAO();
 			List<Atributo> atributosCarro = atributoDAO.GetAtributosPorTipo(1);
 
-			br.com.infnet.enums.Tipo[] tipos = br.com.infnet.enums.Tipo
-					.values();
+			br.com.infnet.enums.Tipo[] tipos = br.com.infnet.enums.Tipo.values();
 
 			List<String> tiposCarro = new ArrayList<String>();
 			List<String> appendTipos = new ArrayList<String>();
